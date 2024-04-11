@@ -1,0 +1,67 @@
+direction: right
+
+Client: "" {
+  shape: circle
+  icon: https://icons.terrastruct.com/aws%2F_General%2FUsers_light-bg.svg
+}
+
+Client1: "" {
+  shape: circle
+  icon: https://icons.terrastruct.com/aws%2F_General%2FUsers_light-bg.svg
+}
+
+Client2: "" {
+  shape: circle
+  icon: https://icons.terrastruct.com/aws%2F_General%2FUsers_light-bg.svg
+}
+
+gateway: Gateway {
+  icon: https://icons.terrastruct.com/azure%2FNetworking%20Service%20Color%2FApplication%20Gateway.svg
+}
+
+microservice1: Microservice {
+  grid-rows: 1
+  Server1: Server
+  Server2: Server
+  Server3: Server
+  Server1.icon: https://icons.terrastruct.com/dev%2Fcsharp.svg
+  Server2.icon: https://icons.terrastruct.com/dev%2Fcsharp.svg
+  Server3.icon: https://icons.terrastruct.com/dev%2Fcsharp.svg
+}
+
+Client -- gateway
+Client1 -- gateway
+Client2 -- gateway
+
+gateway -- microservice1
+
+gateway1: Gateway {
+  icon: https://icons.terrastruct.com/azure%2FNetworking%20Service%20Color%2FApplication%20Gateway.svg
+}
+
+gateway2: Gateway {
+  icon: https://icons.terrastruct.com/azure%2FNetworking%20Service%20Color%2FApplication%20Gateway.svg
+}
+
+microservice2: Microservice {
+  grid-rows: 1
+  Server1: Server
+  Server2: Server
+  Server3: Server
+  Server1.icon: https://icons.terrastruct.com/dev%2Fcsharp.svg
+  Server2.icon: https://icons.terrastruct.com/dev%2Fcsharp.svg
+  Server3.icon: https://icons.terrastruct.com/dev%2Fcsharp.svg
+}
+
+microservice3: Microservice {
+  grid-rows: 1
+  Server1: Server
+  Server2: Server
+  Server3: Server
+  Server1.icon: https://icons.terrastruct.com/dev%2Fcsharp.svg
+  Server2.icon: https://icons.terrastruct.com/dev%2Fcsharp.svg
+  Server3.icon: https://icons.terrastruct.com/dev%2Fcsharp.svg
+}
+
+microservice1 -> gateway1 -> microservice2
+microservice1 -> gateway2 -> microservice3
