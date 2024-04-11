@@ -1,0 +1,74 @@
+direction: right
+
+Client: "" {
+  shape: circle
+  icon: https://icons.terrastruct.com/aws%2F_General%2FUsers_light-bg.svg
+}
+
+Client1: "" {
+  shape: circle
+  icon: https://icons.terrastruct.com/aws%2F_General%2FUsers_light-bg.svg
+}
+
+Client2: "" {
+  shape: circle
+  icon: https://icons.terrastruct.com/aws%2F_General%2FUsers_light-bg.svg
+}
+
+server: Server {
+  grid-rows: 1
+  WebAPI {
+
+  }
+  WebAPI.icon: https://icons.terrastruct.com/dev%2Fcsharp.svg
+  PSQL.icon: https://icons.terrastruct.com/dev%2Fpostgresql.svg
+
+  WebAPI -> PSQL
+
+  style: {
+    # All CSS color names are valid
+    stroke: red
+    fill: "#f7b5bd"
+  }
+}
+
+Client -- server: {
+  style: {
+    # All CSS color names are valid
+    stroke: red
+  }
+}
+
+Client1 -- server: {
+  style: {
+    # All CSS color names are valid
+    stroke: red
+  }
+}
+
+Client -- server: {
+  style: {
+    # All CSS color names are valid
+    stroke: red
+  }
+}
+Client1 -- server: {
+  style: {
+    # All CSS color names are valid
+    stroke: red
+  }
+}
+
+Client2 -- server: {
+  style: {
+    # All CSS color names are valid
+    stroke: red
+  }
+}
+
+Client2 -- server: {
+  style: {
+    # All CSS color names are valid
+    stroke: red
+  }
+}
