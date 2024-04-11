@@ -1,0 +1,37 @@
+direction: right
+
+Client: "" {
+  shape: circle
+  icon: https://icons.terrastruct.com/aws%2F_General%2FUsers_light-bg.svg
+}
+
+Client1: "" {
+  shape: circle
+  icon: https://icons.terrastruct.com/aws%2F_General%2FUsers_light-bg.svg
+}
+
+Client2: "" {
+  shape: circle
+  icon: https://icons.terrastruct.com/aws%2F_General%2FUsers_light-bg.svg
+}
+
+gateway: Gateway {
+  icon: https://icons.terrastruct.com/azure%2FNetworking%20Service%20Color%2FApplication%20Gateway.svg
+}
+
+server: Server 1 {
+  grid-rows: 1
+  Instance.icon: https://icons.terrastruct.com/dev%2Fcsharp.svg
+}
+
+server2: Server 2 {
+  grid-rows: 1
+  Instance.icon: https://icons.terrastruct.com/dev%2Fcsharp.svg
+}
+
+Client -- gateway
+Client1 -- gateway
+Client2 -- gateway
+
+gateway -- server
+gateway -- server2
